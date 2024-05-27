@@ -10,20 +10,20 @@ const NavBar: React.FC = () => {
       <Link href="/HomePage">
         <p className='font-Danfo text-2xl cursor-pointer'>Yogesh Negi</p>
       </Link>
-      <div className='flex gap-2'>
+      <div className='flex justify-around items-center h-auto gap-2'>
         <Link href="/AboutPage">
-          <p className='font-Teko text-2xl cursor-pointer border-b-2 border-black'>About</p>
+          <p className='font-Teko text-2xl cursor-pointer hover:border-b-2 border-black hover:shadow-xl'>About</p>
         </Link>
         <Link href="/">
-          <p className='font-Teko text-2xl cursor-pointer border-b-2 border-black'>Work</p>
+          <p className='font-Teko text-2xl cursor-pointer hover:border-b-2 border-black hover:shadow-xl'>Work</p>
         </Link>
         <Link href="/">
-          <p className='font-Teko text-2xl cursor-pointer border-b-2 border-black'>Connect</p>
+          <p className='font-Teko text-2xl cursor-pointer hover:border-b-2 border-black hover:shadow-xl'>Connect</p>
         </Link>
         <DarkModeToggle
           onChange={setIsDarkMode}
           checked={isDarkMode}
-          size={70}
+          size={50}
         />
       </div>
     </div>
