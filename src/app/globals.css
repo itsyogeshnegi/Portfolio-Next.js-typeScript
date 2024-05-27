@@ -8,3 +8,21 @@
     text-wrap: balance;
   }
 }
+
+* {
+  scrollbar-width: thin; /* For Firefox */
+}
+
+*::-webkit-scrollbar {
+  width: 0.5px; /* For Chrome, Safari, and Opera */
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5); /* Color of the scrollbar */
+  border-radius: 50px;
+  border: none;
+}
