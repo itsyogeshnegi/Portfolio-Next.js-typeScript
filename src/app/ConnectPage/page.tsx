@@ -9,18 +9,18 @@ const page:React.FC = () => {
     <hr/>
     <div className='h-screen w-full'>
       <div className='py-1 w-full flex justify-center items-center font-Teko text-3xl font-medium'>
-      <h1>Connect With Me...📧</h1>
+      <h1>{`Let's make something amazing together...📧`}</h1>
       </div>
       <div className='flex w-full flex-row justify-around items-center'>
         <form className="w-full max-w-lg mt-10">
-          <div className="flex flex-wrap -mx-1 mb-2">
-            <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+          <div className="flex flex-wrap  mb-2">
+            <div className="w-full md:w-1/2 px-1 mb-6 md:mb-0">
               <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
                 Your Name
               </label>
               <input className="appearance-none block w-full bg-gray-200 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" type="text" placeholder="john" />
             </div>
-            <div className="w-full md:w-1/2 px-3">
+            <div className="w-full md:w-1/2 px-1">
               <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" >
                 Your Email
               </label>
@@ -30,7 +30,7 @@ const page:React.FC = () => {
           <div className="flex flex-wrap -mx-3 mb-2">
             <div className="w-full px-3">
               <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
-                Message
+                Subject
               </label>
               <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"  type="text" placeholder="Hello John...." />
             </div>
@@ -38,7 +38,7 @@ const page:React.FC = () => {
           <div className="flex flex-wrap -mx-3 mb-2">
             <div className="w-full px-3">
               <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
-                Message
+                Phone Number
               </label>
               <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"  type="text" placeholder="Hello John...." />
             </div>

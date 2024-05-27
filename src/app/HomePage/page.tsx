@@ -1,6 +1,7 @@
 "use client"
 import React from 'react'
 import NavBar from '@/components/NavBar/NavBar'
+import Footer from '@/components/Footer/Footer'
 const HomePage : React.FC = () => {
   return (
     <>
@@ -14,6 +15,7 @@ const HomePage : React.FC = () => {
       <a href='/YogeshNegi-CV.pdf' download >Download CV</a>
       </button>
     </div>
+    <Footer/>
     </>
   )
 }
