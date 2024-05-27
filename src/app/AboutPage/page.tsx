@@ -1,5 +1,6 @@
 "use client"
 import React from 'react'
+import Image from 'next/image'
 import NavBar from '@/components/NavBar/NavBar'
 
 const AboutPage: React.FC = () => {
@@ -8,15 +9,16 @@ const AboutPage: React.FC = () => {
       <NavBar />
       <hr />
       <div
-        className="h-screen w-[100%] flex justify-evenly  items-center about-container max-md:h-full max-md:flex-col-reverse"
+        className="h-screen w-[100%] flex justify-evenly  items-center max-md:h-full max-md:flex-col-reverse"
       >
         <div
-          className="h-3/5 w-2/6 about-image-container bg-transparent flex justify-center items-center max-md:mb-5"
+          className="h-3/5 w-2/6 flex justify-center items-center max-md:mb-5"
         >
-          <img
-            data-aos="flip-left"
+          <Image
+            width={300}
+            height={300}
             src="/my.jpg"
-            className="h-[90%] about-image"
+            className="object-contain"
             alt="Yogesh"
             style={{ borderRadius: "50px", backgroundColor: "transparent" }}
           />
@@ -50,6 +52,8 @@ const AboutPage: React.FC = () => {
           </p>
         </div>
       </div>
+
+    
     </>
   )
 }

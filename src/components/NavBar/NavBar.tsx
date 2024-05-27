@@ -17,7 +17,7 @@ const NavBar: React.FC = () => {
         <Link href="/">
           <p className='font-Teko text-2xl cursor-pointer hover:border-b-2 border-black hover:shadow-xl'>Work</p>
         </Link>
-        <Link href="/">
+        <Link href="/ConnectPage">
           <p className='font-Teko text-2xl cursor-pointer hover:border-b-2 border-black hover:shadow-xl'>Connect</p>
         </Link>
         <DarkModeToggle
