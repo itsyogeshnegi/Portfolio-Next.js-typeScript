@@ -23,10 +23,10 @@ const AboutPage: React.FC = () => {
         </div>
         <div className="h-3/4 w-2/5 bg-transparent flex flex-col justify-center max-md:w-4/5 max-md:text-center max-md:mt-4">
           <p className="text-black font-black font-Roboto text-3xl my-2.5 max-md:text-2xl bg-transparent">
-            I'm Yogesh Negi, a Software Developer.
+           {` I'm Yogesh Negi, a Software Developer`}.
           </p>
           <p className="text-black text-justify max-md:text-center bg-transparent font-Teko">
-            Hello, I'm a proficient Software Developer specializing in JavaScript,
+           {` Hello, I'm a proficient Software Developer specializing in JavaScript,`}
             React, and Next.js. With a keen eye for detail and a passion for
             crafting efficient solutions, I thrive in the dynamic world of web
             development, constantly pushing boundaries and delivering exceptional
