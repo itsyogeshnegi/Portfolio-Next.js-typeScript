@@ -2,6 +2,7 @@
 import NavBar from '@/components/NavBar/NavBar'
 import React from 'react'
 import Image from 'next/image'
+import Footer from '@/components/Footer/Footer'
 const page:React.FC = () => {
   return (
     <>
@@ -32,7 +33,7 @@ const page:React.FC = () => {
               <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
                 Subject
               </label>
-              <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"  type="text" placeholder="Hello John...." />
+              <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"  type="text" placeholder="Work..." />
             </div>
           </div>
           <div className="flex flex-wrap -mx-3 mb-2">
@@ -40,7 +41,7 @@ const page:React.FC = () => {
               <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
                 Phone Number
               </label>
-              <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"  type="text" placeholder="Hello John...." />
+              <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"  type="text" placeholder="987654321" />
             </div>
           </div>
           <div className="flex flex-wrap -mx-3 mb-2">
@@ -72,6 +73,7 @@ const page:React.FC = () => {
 
       </div>
     </div>
+    <Footer/>
     </>
   )
 }
