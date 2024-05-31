@@ -6,7 +6,7 @@ const NavBar: React.FC = () => {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
 
   return (
-    <div className='h-20 w-full flex justify-between items-center px-5 shadow-xl'>
+    <div className='h-14 w-full flex justify-between items-center px-5 shadow-xl'>
       <Link href="/HomePage">
         <p className='font-Danfo text-2xl cursor-pointer'>Yogesh Negi</p>
       </Link>
@@ -14,7 +14,7 @@ const NavBar: React.FC = () => {
         <Link href="/AboutPage">
           <p className='font-Teko text-2xl cursor-pointer hover:border-b-2 border-black hover:shadow-xl'>About</p>
         </Link>
-        <Link href="/">
+        <Link href="/WorkPage">
           <p className='font-Teko text-2xl cursor-pointer hover:border-b-2 border-black hover:shadow-xl'>Work</p>
         </Link>
         <Link href="/ConnectPage">

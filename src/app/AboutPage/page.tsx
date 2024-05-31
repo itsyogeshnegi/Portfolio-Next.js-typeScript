@@ -3,7 +3,6 @@ import React from 'react'
 import Image from 'next/image'
 import NavBar from '@/components/NavBar/NavBar'
 import Footer from '@/components/Footer/Footer'
-
 const AboutPage: React.FC = () => {
   return (
     <>
