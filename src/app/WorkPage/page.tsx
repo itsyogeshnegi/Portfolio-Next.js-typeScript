@@ -1,11 +1,11 @@
 "use client"
-import React,{useState} from "react";
+import React from "react";
 import NavBar from "@/components/NavBar/NavBar";
 import Footer from "@/components/Footer/Footer";
 import ProjectCard from "@/components/ProjectCard/ProjectCard";
 
 const page: React.FC = () => {
-  const [revised, setRevised] = useState<boolean>(true);
+  // const [revised, setRevised] = useState<boolean>(true);
   return (
   <>
   {/* <NavBar/> */}
