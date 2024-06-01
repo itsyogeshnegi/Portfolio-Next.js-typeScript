@@ -1,12 +1,21 @@
 "use client"
-import React from 'react'
+import React, { useEffect } from 'react'
 import Image from 'next/image'
 import NavBar from '@/components/NavBar/NavBar'
 import Footer from '@/components/Footer/Footer'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const AboutPage: React.FC = () => {
+
+  useEffect(()=>{
+    AOS.init({
+      duration: 500,
+      once: true,
+    });
+  },[])
+
   return (
     <>
-      {/* <NavBar /> */}
       <hr />
       <div className="w-full flex justify-center items-center py-4 pt-10">
       <h1 className="text-5xl font-Teko font-extrabold">About</h1>
@@ -24,9 +33,10 @@ const AboutPage: React.FC = () => {
             className="object-contain"
             alt="Yogesh"
             style={{ borderRadius: "50px", backgroundColor: "transparent" }}
+            data-aos="fade-right"
           />
         </div>
-        <div className="h-3/4 w-2/5 bg-transparent flex flex-col justify-center max-md:w-4/5 max-md:text-center max-md:mt-4">
+        <div className="h-3/4 w-2/5 bg-transparent flex flex-col justify-center max-md:w-4/5 max-md:text-center max-md:mt-4" data-aos="fade-left">
           <p className="text-black font-black font-Roboto text-3xl my-2.5 max-md:text-2xl bg-transparent">
            {` I'm Yogesh Negi, a Software Developer`}.
           </p>
@@ -55,7 +65,6 @@ const AboutPage: React.FC = () => {
           </p>
         </div>
       </div>
-    {/* <Footer/> */}
     
     </>
   )

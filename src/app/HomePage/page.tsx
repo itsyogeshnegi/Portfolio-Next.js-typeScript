@@ -7,18 +7,10 @@ import Skills from '@/components/Skills/Skills';
 const HomePage: React.FC = () => {
   return (
     <>
-      {/* <NavBar /> */}
       <hr />
       <div className='h-screen w-full px-10 text-center flex gap-3 flex-col justify-center items-center  font-Roboto text-6xl font-black'
-      //  style={{
-      //   background: "url(/background.jpg) no-repeat center center",
-      //   backgroundSize: "cover",
-      //   backdropFilter: "blur(30px)",
-      //   WebkitBackdropFilter: "blur(30px)"
-      // }}
       >
         <>
-        {/* <span>Hi There !</span> */}
         <span className='text-7xl'>Full-Stack<br/>{`<Developer/>`}</span>
 
         <span className='text-2xl text-slate-500 font-Teko font-extrabold'>Yogesh Negi</span>
@@ -31,7 +23,6 @@ const HomePage: React.FC = () => {
         </button>
         </>
       </div>
-      {/* <Footer /> */}
     </>
   );
 }

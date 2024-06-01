@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 interface ProjectCardProps {
   revised: boolean;
@@ -27,9 +29,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ revised, projectName, techSta
 
   const items = [image1, image2, image3];
 
+  useEffect(()=>{
+    AOS.init({
+      duration: 500,
+      once: true,
+    });
+  },[])
+
   return (
     <div className={`py-2 min-h-80 w-full my-2 flex max-md:flex-col ${revised ? "flex-row-reverse" : "flex-row"}`}>
-      <div className='container w-1/2 max-md:w-full max-md:justify-center max-md:items-center flex flex-col justify-start gap-2 items-start px-2 py-2'>
+      <div  data-aos="fade-right" className='container w-1/2 max-md:w-full max-md:justify-center max-md:items-center flex flex-col justify-start gap-2 items-start px-2 py-2'>
         <h1 className='font-Teko text-3xl font-semibold'>
           {projectName}
         </h1>
@@ -39,7 +48,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ revised, projectName, techSta
         </p>
       </div>
       <div className='container w-1/2 '>
-        <div className="mx-auto bg-transparent px-5">
+        <div className="mx-auto bg-transparent px-5"  data-aos="fade-left">
           <Slider {...settings}>
             {items.map((e, index) => (
               <img
