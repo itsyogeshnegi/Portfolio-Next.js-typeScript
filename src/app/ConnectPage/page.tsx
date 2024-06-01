@@ -40,7 +40,7 @@ const Page: React.FC = () => {
 
   return (
     <>
-      <NavBar />
+      {/* <NavBar /> */}
       <hr />
       <div className='h-screen w-full'>
         <div className='py-1 w-full flex justify-center items-center font-Teko text-3xl font-medium'>

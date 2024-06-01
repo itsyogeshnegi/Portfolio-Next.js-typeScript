@@ -7,7 +7,7 @@ import Skills from '@/components/Skills/Skills';
 const HomePage: React.FC = () => {
   return (
     <>
-      <NavBar />
+      {/* <NavBar /> */}
       <hr />
       <div className='h-screen w-full px-10 text-center flex gap-3 flex-col justify-center items-center  font-Roboto text-6xl font-black'
       //  style={{
@@ -19,7 +19,7 @@ const HomePage: React.FC = () => {
       >
         <>
         {/* <span>Hi There !</span> */}
-        <span className='text-7xl'>Software.<br/>{`<Developer/>`}</span>
+        <span className='text-7xl'>Full-Stack<br/>{`<Developer/>`}</span>
 
         <span className='text-2xl text-slate-500 font-Teko font-extrabold'>Yogesh Negi</span>
         <span className='text-5xl font-light'>I make the complex simple...😊</span>
@@ -31,7 +31,7 @@ const HomePage: React.FC = () => {
         </button>
         </>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

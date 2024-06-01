@@ -6,8 +6,11 @@ import Footer from '@/components/Footer/Footer'
 const AboutPage: React.FC = () => {
   return (
     <>
-      <NavBar />
+      {/* <NavBar /> */}
       <hr />
+      <div className="w-full flex justify-center items-center py-4 pt-10">
+      <h1 className="text-5xl font-Teko font-extrabold">About</h1>
+    </div>
       <div
         className="h-screen w-[100%] flex justify-evenly  items-center max-md:h-full max-md:flex-col-reverse"
       >
@@ -52,7 +55,7 @@ const AboutPage: React.FC = () => {
           </p>
         </div>
       </div>
-    <Footer/>
+    {/* <Footer/> */}
     
     </>
   )
