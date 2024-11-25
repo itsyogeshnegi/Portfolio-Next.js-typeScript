@@ -13,7 +13,7 @@ const HomePage: React.FC = () => {
           {/* Left Section */}
           <div className="md:w-1/2 text-center md:text-left space-y-4">
             <h1 className="text-7xl font-black leading-tight max-md:text-3xl">
-              Front-End
+              Frontend
               <br />
               <span className="text-8xl max-md:text-4xl">{`Developer.`}</span>
             </h1>
