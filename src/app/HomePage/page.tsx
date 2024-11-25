@@ -11,10 +11,10 @@ const HomePage: React.FC = () => {
       <div className='h-screen w-full px-10 text-center flex gap-3 flex-col justify-center items-center  font-Roboto text-6xl font-black'
       >
         <>
-        <span className='text-7xl'>Full-Stack<br/>{`<Developer/>`}</span>
+        <span className='text-7xl'>Front-End<br/>{`<Developer/>`}</span>
 
         <span className='text-2xl text-slate-500 font-Teko font-extrabold'>Yogesh Negi</span>
-        <span className='text-5xl font-light'>I make the complex simple...😊</span>
+        <span className='text-5xl font-light'>I make the complex simple...</span>
         </>
         <>
         <Skills/>

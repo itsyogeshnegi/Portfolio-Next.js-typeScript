@@ -41,7 +41,7 @@ const Page: React.FC = () => {
   return (
     <>
       {/* <NavBar /> */}
-      <hr />
+      {/* <hr /> */}
       <div className='h-screen w-full'>
         <div className='py-1 w-full flex justify-center items-center font-Teko text-3xl font-medium'>
           <h1>{`Let's make something amazing together...📧`}</h1>

@@ -9,7 +9,7 @@ const page: React.FC = () => {
   return (
   <>
   {/* <NavBar/> */}
-  <div className="min-h-screen w-full h-auto">
+  <div className="min-h-screen w-full h-auto px-10">
     <div className="w-full flex justify-center items-center py-4">
       <h1 className="text-5xl font-Teko font-extrabold">Projects</h1>
     </div>
