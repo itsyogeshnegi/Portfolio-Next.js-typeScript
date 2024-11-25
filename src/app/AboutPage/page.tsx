@@ -1,73 +1,73 @@
-"use client"
-import React, { useEffect } from 'react'
-import Image from 'next/image'
-import NavBar from '@/components/NavBar/NavBar'
-import Footer from '@/components/Footer/Footer'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-const AboutPage: React.FC = () => {
+"use client";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-  useEffect(()=>{
+const AboutPage: React.FC = () => {
+  useEffect(() => {
     AOS.init({
       duration: 500,
       once: true,
     });
-  },[])
+  }, []);
+
+    const calculateExperience = () => {
+      const startDate = new Date(2022, 7);
+      const currentDate = new Date();
+
+      const totalMonths =
+        (currentDate.getFullYear() - startDate.getFullYear()) * 12 +
+        currentDate.getMonth() -
+        startDate.getMonth();
+
+      const years = Math.floor(totalMonths / 12);
+      const months = totalMonths % 12;
+
+      return { years, months };
+    };
+
+    const { years, months } = calculateExperience();
 
   return (
     <>
-      <hr />
-      <div className="w-full flex justify-center items-center py-4 pt-10">
-      <h1 className="text-5xl font-Teko font-extrabold">About</h1>
-    </div>
-      <div
-        className="h-screen w-[100%] flex justify-evenly  items-center max-md:h-full max-md:flex-col-reverse"
-      >
+      <div className="w-full flex justify-center items-center py-10">
+        <h1 className="text-5xl font-bold text-[#4831d4] font-Teko tracking-wide">
+          About Me
+        </h1>
+      </div>
+
+      <div className="flex flex-col items-center justify-start px-6 md:px-16 lg:px-32 py-12 bg-white">
+        {/* Text Section */}
         <div
-          className="h-3/5 w-2/6 flex justify-center items-center max-md:mb-5"
+          className="flex flex-col items-start w-full max-w-4xl"
+          data-aos="fade-left"
         >
-          <Image
-            width={300}
-            height={300}
-            src="/my.jpg"
-            className="object-contain"
-            alt="Yogesh"
-            style={{ borderRadius: "50px", backgroundColor: "transparent" }}
-            data-aos="fade-right"
-          />
-        </div>
-        <div className="h-3/4 w-2/5 bg-transparent flex flex-col justify-center max-md:w-4/5 max-md:text-center max-md:mt-4" data-aos="fade-left">
-          <p className="text-black font-black font-Roboto text-3xl my-2.5 max-md:text-2xl bg-transparent">
-           {` I'm Yogesh Negi, a Software Developer`}.
+          <p className="text-[#4831d4] text-2xl md:text-3xl font-extrabold font-Teko leading-snug mb-4 text-center">
+            Hi, I'm Yogesh Negi, Nice to meet you.
           </p>
-          <p className="text-black text-justify max-md:text-center bg-transparent font-Teko">
-           {` Hello, I'm a proficient Software Developer specializing in JavaScript,`}
+          <p className="text-purple-900 text-lg leading-relaxed font-Teko mb-6">
+            I am a proficient Software Developer specializing in JavaScript,
             React, and Next.js. With a keen eye for detail and a passion for
             crafting efficient solutions, I thrive in the dynamic world of web
-            development, constantly pushing boundaries and delivering exceptional
-            results.
+            development, constantly pushing boundaries and delivering
+            exceptional results.
           </p>
-          <br />
-          <hr />
-          <br />
-          <p className="text-black font-semibold bg-transparent font-Teko">
-            <span className="font-black text-black bg-transparent">Experience :</span> 1.5 years +
+          <hr className="w-full border-gray-300 my-4 text-purple-900" />
+          <p className="text-lg  font-Teko mb-2 text-purple-900">
+            <span className="font-bold">Experience: </span> {years} year
+            {years !== 1 ? "s" : ""} and {months} month
+            {months !== 1 ? "s" : ""}
           </p>
-          <p className="text-black font-semibold max-md:mb-2 bg-transparent font-Teko">
-            <span className="font-black text-black bg-transparent">Location :</span> New Delhi,
-            India.
+          <p className="text-lg  font-Teko mb-2 text-purple-900">
+            <span className="font-bold">Location: </span> New Delhi, India
           </p>
-          <p className="text-black font-medium bg-transparent font-Teko">
-            <span className="font-semibold text-black bg-transparent">
-              If you want to know more about me then download my CV which is
-              above.
-            </span>
+          <p className="text-md text-purple-900 font-Teko">
+            Curious to learn more about me? Download my CV using the link above!
           </p>
         </div>
       </div>
-    
     </>
-  )
-}
+  );
+};
 
-export default AboutPage
+export default AboutPage;

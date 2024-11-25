@@ -12,10 +12,10 @@ const HomePage: React.FC = () => {
         <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-6xl">
           {/* Left Section */}
           <div className="md:w-1/2 text-center md:text-left space-y-4">
-            <h1 className="text-7xl font-black leading-tight">
+            <h1 className="text-7xl font-black leading-tight max-md:text-3xl">
               Front-End
-               <br />
-              <span className="text-8xl">{`Developer.`}</span>
+              <br />
+              <span className="text-8xl max-md:text-4xl">{`Developer.`}</span>
             </h1>
             <p className="text-3xl text-[#ccf381] font-Teko font-extrabold">
               Yogesh Negi
@@ -30,7 +30,7 @@ const HomePage: React.FC = () => {
           </div>
 
           {/* Right Section */}
-          <div className="md:w-1/2 flex flex-col items-center mt-10 md:mt-0">
+          <div className="md:w-1/2 max-md:py-5 flex flex-col items-center mt-10 md:mt-0">
             <div className=" h-60 w-64 flex items-center justify-center border-2 border-[#ccf381] p-2">
               <Image
                 width={500}
