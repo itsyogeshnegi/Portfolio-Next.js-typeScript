@@ -43,7 +43,7 @@ const AboutPage: React.FC = () => {
           data-aos="fade-left"
         >
           <p className="text-[#4831d4] text-2xl md:text-3xl font-extrabold font-Teko leading-snug mb-4 text-center">
-            Hi, I'm Yogesh Negi, Nice to meet you.
+            {`Hi, I'm Yogesh Negi, Nice to meet you.`}
           </p>
           <p className="text-purple-900 text-lg leading-relaxed font-Teko mb-6">
             I am a proficient Software Developer specializing in JavaScript,
